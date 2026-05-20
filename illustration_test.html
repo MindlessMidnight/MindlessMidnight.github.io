@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Illustration – Lisa Schubert</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'DM Sans', sans-serif; background-color: #FAF5E8; }
+  </style>
+</head>
+<body class="text-[#1C1F3B] min-h-screen overflow-x-hidden">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-10 py-5 bg-[#FAF5E8]/90 backdrop-blur-md border-b border-[#1C1F3B]/5">
+    <a href="index.html" class="text-lg font-medium text-[#1C1F3B]" style="font-family:'DM Sans',sans-serif;">Lisa Schubert</a>
+    <div class="hidden md:flex items-center gap-10">
+      <a class="text-[#555870] hover:text-[#1C1F3B] transition-colors text-sm" href="index.html#work">Work</a>
+      <a class="text-[#1C1F3B] font-medium text-sm" href="illustration.html">Illustration</a>
+      <a class="text-[#555870] hover:text-[#1C1F3B] transition-colors text-sm" href="index.html#about">About</a>
+      <a href="index.html#contact" class="bg-[#1C1F3B] text-[#FAF5E8] px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#5580ED] transition-colors">Contact</a>
+    </div>
+  </nav>
+
+  <div class="max-w-7xl mx-auto px-10 pt-36 pb-16">
+    <p class="text-[#5580ED] text-sm font-semibold tracking-wide uppercase mb-3">Illustration</p>
+    <h1 class="text-[#1C1F3B] mb-4" style="font-family:'Newsreader',serif; font-weight:500; font-size:clamp(2rem,4vw,3.5rem); line-height:1.1;">Drawing as a way of thinking.</h1>
+    <p class="text-[#555870] text-base leading-relaxed max-w-xl mb-16" style="font-weight:300;">From published children's books to live visual notes — illustration is how I make complex ideas tangible and stories worth looking at.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+
+      <!-- Wim & Frida – large card -->
+      <a href="wim-frida.html" class="md:col-span-7 rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-500 block" style="background:white; border:1px solid rgba(28,31,59,0.1);">
+        <div class="overflow-hidden" style="aspect-ratio:16/10; background:#FAD9D0;">
+          <img src="wf_Illu.jpg" alt="Wim und Frida" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+        </div>
+        <div class="p-6 bg-white">
+          <div class="flex gap-2 mb-2">
+            <span class="px-3 py-1 bg-[#1C1F3B] text-white rounded-full text-xs font-medium">Illustration</span>
+            <span class="px-3 py-1 bg-[#1C1F3B] text-white rounded-full text-xs font-medium">Children's Book</span>
+          </div>
+          <h3 class="text-2xl mb-1 text-[#1C1F3B]" style="font-family:'Newsreader',serif; font-weight:500;">Wim &amp; Frida Räbeliechtli</h3>
+          <p class="text-[#555870] text-sm" style="font-weight:400;">Picture book published by Baeschlin Verlag, September 2025. First edition sold out.</p>
+        </div>
+      </a>
+
+      <!-- Sketchnotes – smaller card -->
+      <a href="sketchnotes.html" class="md:col-span-5 rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-500 block" style="background:white; border:1px solid rgba(28,31,59,0.1);">
+        <div class="overflow-hidden" style="aspect-ratio:4/3; background:#F0EEE8;">
+          <img src="sn_stoicism.jpg" alt="Sketchnotes" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+        </div>
+        <div class="p-6 bg-white">
+          <div class="flex gap-2 mb-2">
+            <span class="px-3 py-1 bg-[#1C1F3B] text-white rounded-full text-xs font-medium">Visual Sketchnotes</span>
+          </div>
+          <h3 class="text-xl mb-1 text-[#1C1F3B]" style="font-family:'Newsreader',serif; font-weight:500;">Visual Sketchnotes: Live Visualisation</h3>
+          <p class="text-[#555870] text-sm" style="font-weight:400;">Capturing ideas live through drawing, symbols, and text.</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <footer class="bg-[#1C1F3B] border-t border-[#FAF5E8]/10 py-6 text-center text-[#FAF5E8]/30 text-xs">
+    © 2026 Lisa Schubert · UX Designer &amp; Illustrator · Munich
+  </footer>
+
+</body>
+</html>
