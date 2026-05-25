@@ -9,7 +9,7 @@
   <style>
     body { font-family: 'DM Sans', sans-serif; background-color: #FAF5E8; }
     .section { margin-bottom: 4rem; }
-    .phase-block { padding-top: 0; margin-top: 4rem; border-top: none; }
+    .phase-block { padding-top: 4rem; margin-top: 0; border-top: 1.5px solid rgba(28,31,59,0.1); }
     .phase-block:first-child { padding-top: 0; margin-top: 0; border-top: none; }
 
     .img-hero  { display:block; margin:1.25rem auto 0; width:100%; border-radius:0.75rem; height:auto; }
@@ -117,7 +117,7 @@
     </div>
   </nav>
 
-  <div style="background:#FEF3BC; padding:5rem 2.5rem 2.76rem;">
+  <div style="background:#FEF3BC; padding:5rem 2.5rem 6.5rem;">
     <div style="max-width:1600px; margin:0 auto;">
     <a href="index.html" class="inline-flex items-center gap-2 text-sm hover:opacity-70 transition-opacity" style="color:#2a5ce8; display:inline-flex; margin-bottom:3rem; margin-top:2rem;">← All Projects</a>
     <div style="display:grid; grid-template-columns:1.5fr 510px; gap:4rem; align-items:start; margin-right:-2.5rem;">
@@ -133,7 +133,7 @@
       </div>
     </div>
     <!-- Meta no box, just text -->
-    <div style="margin-top:3rem; padding-top:1rem; border-top:2px solid rgba(28,31,59,0.25);">
+    <div style="margin-top:3rem; padding-top:1.5rem; border-top:2px solid rgba(28,31,59,0.25);">
       <div class="header-meta">
         <div class="header-meta-item"><p style="color:#2a5ce8; font-size:0.65rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.25rem;">Context</p><p class="text-sm text-[#555870]">Digitale Leute School Bootcamp</p></div>
         <div class="header-meta-item"><p style="color:#2a5ce8; font-size:0.65rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.25rem;">Timeline</p><p class="text-sm text-[#555870]">2026, 4 months</p></div>
@@ -143,7 +143,7 @@
     </div>
     </div>
   </div>
-  <div style="height:4.5rem;"></div>
+  <div style="height:2rem;"></div>
 
   <div class="page-layout pb-32">
 
@@ -180,7 +180,52 @@
       </div>
     </div>
 
-    <!-- 2. PERSONA + CRITICAL MOMENT -->
+    <!-- 2. RESEARCH -->
+    <div class="section" id="research">
+      <p class="section-label">Research</p>
+      <h2 class="section-h2">3 interviews. 21 survey participants. One clear pattern.</h2>
+      <div class="stat-row">
+        <div class="stat-item">
+          <div class="stat-number">61.9%</div>
+          <div class="stat-label">name uncertainty as the biggest barrier to meeting new people</div>
+        </div>
+        <div class="stat-item" style="padding-left:1.5rem;">
+          <div class="stat-number">57%</div>
+          <div class="stat-label">find people through friends, not apps or events</div>
+        </div>
+        <div class="stat-item" style="padding-left:1.5rem;">
+          <div class="stat-number">57.1%</div>
+          <div class="stat-label">pursue their hobby multiple times per week</div>
+        </div>
+      </div>
+      <div class="highlight" style="margin-top:1.25rem;">
+        <p class="text-[#1C1F3B] text-sm italic">"My worst fear is that everyone is already talking to each other and I end up standing alone."</p>
+      </div>
+      <p class="section-body" style="margin-top:0.75rem;">The barrier is not access. It is uncertainty.</p>
+    </div>
+
+    <!-- 3. KEY INSIGHTS -->
+    <div class="section" id="insights">
+      <p class="section-label">Key Insights</p>
+      <h2 class="section-h2">Finding people is not enough.</h2>
+      <p class="section-body" style="margin-bottom:0.75rem;">Life stage, commitment, and motivation determine whether connections form, not just shared hobbies. Even with a good match, users hesitate. The gap between finding someone and actually meeting them is where connections fail.</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0; border-top:1px solid rgba(28,31,59,0.08); margin-top:0.75rem;">
+        <div style="padding:1.25rem 2rem 1.25rem 0; border-right:1px solid rgba(28,31,59,0.08);">
+          <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.4rem;">Discovery</p>
+          <p class="section-body">Context and life situation matter as much as shared interests.</p>
+        </div>
+        <div style="padding:1.25rem 2rem; border-right:1px solid rgba(28,31,59,0.08);">
+          <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.4rem;">Behaviour</p>
+          <p class="section-body">Even with a good match, people hesitate to act.</p>
+        </div>
+        <div style="padding:1.25rem 0 1.25rem 2rem;">
+          <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#5580ED; margin-bottom:0.4rem;">Core</p>
+          <p class="section-body">The gap between matching and meeting is where connections fail.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. PERSONA + CRITICAL MOMENT merged -->
     <div class="section" id="persona">
       <p class="section-label">Persona</p>
       <h2 class="section-h2">Sarah: the user at the centre.</h2>
@@ -202,86 +247,28 @@
       <img src="bf_a_centralmoment.png" alt="The critical moment" class="img-md" style="margin-top:1.5rem;"/>
     </div>
 
-    <!-- 3. RESEARCH -->
-    <div class="section" id="research" style="margin-top:5rem;">
-      <p class="section-body" style="color:#9A9EB8; font-style:italic; margin-bottom:1.5rem;">To understand the need and the potential of the idea better, I went into research.</p>
-      <div style="border-top:1px solid rgba(28,31,59,0.1); margin-bottom:2rem;"></div>
-      <p class="section-label">Research</p>
-      <h2 class="section-h2">3 interviews. 21 survey participants. Three different insights.</h2>
-
-      <!-- 3 white cards -->
-      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.25rem; margin-top:2.5rem; margin-bottom:2.5rem; align-items:stretch;">
-
-        <!-- Card 1: Interview -->
-        <div style="background:white; border:1px solid rgba(28,31,59,0.08); border-radius:1rem; padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
-          <p style="font-size:0.65rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#5580ED; margin-bottom:1rem;">Interview insights</p>
-          <div style="flex:1;">
-            <p style="font-size:0.9rem; color:#555870; font-weight:300; line-height:1.6;">Life stage, commitment level, and motivation came up repeatedly. People weren't just looking for someone with the same hobby. They were looking for someone at the same point in life.</p>
-          </div>
-          <div style="border-top:1px solid rgba(28,31,59,0.07); padding-top:1rem;">
-            <p style="font-size:1rem; font-weight:700; color:#5580ED; margin:0; line-height:1.4;">→ Fit determines whether a connection lasts.</p>
-          </div>
-        </div>
-
-        <!-- Card 2: Survey 47/38 -->
-        <div style="background:white; border:1px solid rgba(28,31,59,0.08); border-radius:1rem; padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
-          <p style="font-size:0.65rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#5580ED; margin-bottom:1rem;">Survey findings</p>
-          <div style="flex:1;">
-            <div style="display:flex; align-items:baseline; gap:0.5rem; margin-bottom:0.25rem;">
-              <span style="font-size:2.2rem; font-weight:700; color:#1C1F3B; line-height:1;">47.6%</span>
-            </div>
-            <p style="font-size:0.85rem; color:#555870; font-weight:300; margin-bottom:1rem; line-height:1.5;">built casual acquaintances through a shared hobby</p>
-            <div style="display:flex; align-items:baseline; gap:0.5rem; margin-bottom:0.25rem;">
-              <span style="font-size:2.2rem; font-weight:700; color:#1C1F3B; line-height:1;">38.1%</span>
-            </div>
-            <p style="font-size:0.85rem; color:#555870; font-weight:300; line-height:1.5;">formed even close friendships through a shared hobby</p>
-          </div>
-          <div style="border-top:1px solid rgba(28,31,59,0.07); padding-top:1rem;">
-            <p style="font-size:1rem; font-weight:700; color:#5580ED; margin:0; line-height:1.4;">→ Hobbies are already the main path to real connection for many people.</p>
-          </div>
-        </div>
-
-        <!-- Card 3: Survey 61.9 -->
-        <div style="background:white; border:1px solid rgba(28,31,59,0.08); border-radius:1rem; padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between;">
-          <p style="font-size:0.65rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#5580ED; margin-bottom:1rem;">Survey findings</p>
-          <div style="flex:1;">
-            <div style="display:flex; align-items:baseline; gap:0.5rem; margin-bottom:0.25rem;">
-              <span style="font-size:2.2rem; font-weight:700; color:#1C1F3B; line-height:1;">61.9%</span>
-            </div>
-            <p style="font-size:0.85rem; color:#555870; font-weight:300; line-height:1.5;">name uncertainty about taking the first step as the biggest barrier</p>
-          </div>
-          <div style="border-top:1px solid rgba(28,31,59,0.07); padding-top:1rem;">
-            <p style="font-size:1rem; font-weight:700; color:#5580ED; margin:0; line-height:1.4;">→ The barrier isn't interest. It's the first step.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Single key insight line -->
-      <div style="margin-top:1.5rem; padding:1.25rem 1.5rem; background:#FEF9C3; border-left:4px solid #5580ED; border-radius:0 12px 12px 0;">
-        <p style="font-size:0.65rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#5580ED; margin-bottom:0.5rem;">Key Insights</p>
-        <p style="font-size:1rem; font-weight:500; color:#1C1F3B; margin:0; line-height:1.5;">Finding people is not enough. The right fit matters, and so does making the first step easy.</p>
-      </div>
-    </div>
-
     </div><!-- end discover -->
 
     <!-- PHASE 2: DEFINE -->
     <div id="define" class="phase-block">
 
-    <!-- PROBLEM REFRAMING — no illustrations -->
+    <!-- FROM INSIGHT TO DECISION (moved reframing up) -->
     <div class="section" id="reframing">
       <p class="section-label">Problem Reframing</p>
       <h2 class="section-h2">How the understanding of the problem evolved.</h2>
+
       <div style="margin-top:1.25rem; display:flex; flex-direction:column; gap:0;">
+        <!-- Step 1: plain text -->
         <div style="display:flex; align-items:baseline; gap:1rem; padding:0.6rem 0; border-bottom:1px solid rgba(28,31,59,0.06);">
           <span style="font-size:0.65rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#C0C3D4; min-width:72px; flex-shrink:0;">Assumption</span>
           <p style="font-size:0.9rem; color:#9A9EB8; font-weight:300; margin:0; line-height:1.5;">People struggle to find others with shared interests.</p>
         </div>
+        <!-- Step 2: plain text -->
         <div style="display:flex; align-items:baseline; gap:1rem; padding:0.6rem 0; border-bottom:1px solid rgba(28,31,59,0.06);">
           <span style="font-size:0.65rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#8A8EA8; min-width:72px; flex-shrink:0;">Research</span>
           <p style="font-size:0.9rem; color:#6B7080; font-weight:300; margin:0; line-height:1.5;">People are already finding opportunities through events, communities, and platforms.</p>
         </div>
+        <!-- Step 3: highlighted box only here -->
         <div style="display:flex; align-items:baseline; gap:1rem; padding:0.8rem 0;">
           <span style="font-size:0.65rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#5580ED; min-width:72px; flex-shrink:0;">Insight</span>
           <div style="background:#EEF2FF; border-left:3px solid #5580ED; border-radius:0 8px 8px 0; padding:0.75rem 1rem;">
@@ -289,6 +276,18 @@
             <p style="font-size:0.85rem; color:#555870; font-weight:300; margin:0;">The barrier is not discovery. It is the first step.</p>
           </div>
         </div>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:2rem; margin-top:1.75rem;">
+        <img src="bf_a_shakinghands.png" alt="Shaking hands" style="width:275px; border-radius:0.75rem; height:auto; flex-shrink:0;"/>
+        <svg width="90" height="40" viewBox="0 0 90 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+          <line x1="4" y1="20" x2="72" y2="20" stroke="#5580ED" stroke-width="3" stroke-linecap="round"/>
+          <polyline points="60,8 76,20 60,32" fill="none" stroke="#5580ED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <img src="bf_a_cliffjump.png" alt="Taking the leap" style="width:275px; border-radius:0.75rem; height:auto; flex-shrink:0;"/>
+      </div>
+      <div style="margin-top:2rem; padding:1.25rem 0;">
+        <span style="color:#F5C842; font-size:2rem; margin-right:1rem;">★</span><span style="font-size:1.4rem; font-weight:600; color:#1C1F3B; font-style:italic;">"How might we help Sarah initiate a new connection through her hobby?"</span><span style="color:#F5C842; font-size:2rem; margin-left:1rem;">★</span>
       </div>
     </div>
 
@@ -322,24 +321,9 @@
           </tr>
         </tbody>
       </table>
-
-      <!-- Opportunity -->
-      <div class="highlight" style="margin-top:1.5rem;">
+      <div class="highlight">
         <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-1">Opportunity</p>
         <p class="text-[#1C1F3B]" style="font-weight:500; font-size:1rem;">What if we reduce the barrier of the first step?</p>
-      </div>
-
-      <!-- Illustrations + HMW -->
-      <div style="display:flex; align-items:center; gap:2rem; margin-top:2.5rem;">
-        <img src="bf_a_cliffjump.png" alt="Taking the leap" style="width:275px; border-radius:0.75rem; height:auto; flex-shrink:0;"/>
-        <svg width="90" height="40" viewBox="0 0 90 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
-          <line x1="4" y1="20" x2="72" y2="20" stroke="#5580ED" stroke-width="3" stroke-linecap="round"/>
-          <polyline points="60,8 76,20 60,32" fill="none" stroke="#5580ED" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <img src="bf_a_shakinghands.png" alt="Shaking hands" style="width:275px; border-radius:0.75rem; height:auto; flex-shrink:0;"/>
-      </div>
-      <div style="margin-top:2rem; padding:1.25rem 0;">
-        <span style="color:#F5C842; font-size:2rem; margin-right:1rem;">★</span><span style="font-size:1.4rem; font-weight:600; color:#1C1F3B; font-style:italic;">"How might we help Sarah initiate a new connection through her hobby?"</span><span style="color:#F5C842; font-size:2rem; margin-left:1rem;">★</span>
       </div>
     </div>
 
