@@ -23,20 +23,20 @@
     .placeholder-img span { font-size:0.72rem; color:#8e8a82; font-family:monospace; }
 
     /* ── Sticky sidebar ── */
-    .page-layout { display:grid; grid-template-columns:180px 1fr; gap:0; max-width:1280px; margin:0 auto; padding:0 2.5rem 0 0.5rem; }
+    .page-layout { display:grid; grid-template-columns:140px 1fr; gap:0; max-width:1280px; margin:0 auto; padding:0 1rem; }
     .sidebar { position:relative; }
     .sidebar-inner { position:sticky; top:6rem; padding-top:0.25rem; }
     .sidebar-nav { display:flex; flex-direction:column; gap:4px; }
     .sidebar-nav a {
       display:block; font-size:11px; font-weight:600; letter-spacing:0.07em;
       text-transform:uppercase; text-decoration:none;
-      padding:9px 12px; border-radius:2px; color:#9A9EB8;
+      padding:9px 8px; border-radius:2px; color:#9A9EB8;
       border-left:2px solid transparent;
       transition:color 0.2s, background 0.2s, border-color 0.2s; line-height:1.3;
     }
     .sidebar-nav a:hover { color:#1C1F3B; background:rgba(28,31,59,0.04); }
     .sidebar-nav a.active { color:#2a40b0; background:#dfe6fb; border-left-color:#5580ED; font-weight:700; }
-    .main-content { min-width:0; padding-left:2.5rem; }
+    .main-content { min-width:0; padding-left:1.5rem; }
 
     /* ── Research stats ── */
     .stat-row { display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin-top:1.5rem; border-top:1px solid rgba(28,31,59,0.08); }
@@ -536,8 +536,8 @@
 
       <!-- Row 1 -->
       <div style="display:flex; gap:3rem; margin-bottom:1rem; align-items:flex-start;">
-        <img src="ut-b-profileshorter.png" style="height:413px; width:auto;"/>
-        <img src="ut-b-matchingoptions.png" style="height:413px; width:auto;"/>
+        <img src="ut-b-profileshorter.png" style="width:calc(50% - 1.5rem); height:auto;"/>
+        <img src="ut-b-matchingoptions.png" style="width:calc(50% - 1.5rem); height:auto;"/>
       </div>
       <div style="display:flex; gap:3rem; margin-bottom:2rem; align-items:flex-start;">
         <div style="background:white; border:1px solid rgba(28,31,59,0.1); border-radius:12px; padding:1.1rem 1.25rem; flex:1; display:flex; flex-direction:column; gap:0.6rem;">
@@ -552,8 +552,8 @@
 
       <!-- Row 2 -->
       <div style="display:flex; gap:3rem; margin-bottom:1rem; align-items:flex-start;">
-        <img src="ut-b-matching1screen.png" style="height:413px; width:auto;"/>
-        <img src="ut-b-profilelength.png" style="height:413px; width:auto;"/>
+        <img src="ut-b-matching1screen.png" style="width:calc(50% - 1.5rem); height:auto;"/>
+        <img src="ut-b-profilelength.png" style="width:calc(50% - 1.5rem); height:auto;"/>
       </div>
       <div style="display:flex; gap:3rem; align-items:flex-start;">
         <div style="background:white; border:1px solid rgba(28,31,59,0.1); border-radius:12px; padding:1.1rem 1.25rem; flex:1; display:flex; flex-direction:column; gap:0.6rem;">
