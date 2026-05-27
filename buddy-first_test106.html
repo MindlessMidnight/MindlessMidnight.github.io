@@ -325,7 +325,7 @@
       </div>
 
       <!-- Illustrations + HMW -->
-      <div style="display:flex; align-items:center; justify-content:center; gap:2rem; margin-top:2.5rem;">
+      <div style="display:flex; align-items:center; gap:2rem; margin-top:2.5rem;">
         <img src="bf_a_cliffjump.png" alt="Taking the leap" style="width:275px; border-radius:0.75rem; height:auto; flex-shrink:0;"/>
         <svg width="90" height="40" viewBox="0 0 90 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
           <line x1="4" y1="20" x2="72" y2="20" stroke="#5580ED" stroke-width="3" stroke-linecap="round"/>
@@ -530,7 +530,7 @@
         <img src="ut-CTA_frames.png" style="height:413px; width:auto;"/>
         <img src="ut-matching-options.png" style="height:413px; width:auto;"/>
       </div>
-      <div style="display:flex; gap:3rem; margin-bottom:2rem; align-items:flex-start;">
+      <div style="display:flex; gap:3rem; margin-bottom:2rem;">
         <div style="background:white; border:1px solid rgba(28,31,59,0.1); border-radius:12px; padding:1.1rem 1.25rem; flex:1; display:flex; flex-direction:column; gap:0.6rem;">
           <div style="display:flex; gap:0.5rem; align-items:start;"><span style="color:#5580ED; flex-shrink:0;">✦</span><p class="section-body" style="font-size:0.95rem;">Instead of landing on one profile directly, users now see multiple profiles to browse first</p></div>
           <div style="display:flex; gap:0.5rem; align-items:start;"><span style="color:#5580ED; flex-shrink:0;">✦</span><p class="section-body" style="font-size:0.95rem;">CTA button made visually prominent so the next action is immediately obvious</p></div>
@@ -541,12 +541,12 @@
         </div>
       </div>
 
-      <!-- Row 2: meetup options + profile length -->
+      <!-- Row 2: meetup options + profile length (1/3) -->
       <div style="display:flex; gap:3rem; margin-bottom:1rem; align-items:flex-start;">
         <img src="ut-meetup-options.png" style="height:413px; width:auto;"/>
         <img src="ut-profile length.png" style="height:413px; width:auto;"/>
       </div>
-      <div style="display:flex; gap:3rem; align-items:flex-start;">
+      <div style="display:flex; gap:3rem;">
         <div style="background:white; border:1px solid rgba(28,31,59,0.1); border-radius:12px; padding:1.1rem 1.25rem; flex:1; display:flex; flex-direction:column; gap:0.6rem;">
           <div style="display:flex; gap:0.5rem; align-items:start;"><span style="color:#5580ED; flex-shrink:0;">✦</span><p class="section-body" style="font-size:0.95rem;">2 screens collapsed into 1, less decision effort, more clarity</p></div>
         </div>
@@ -589,36 +589,19 @@
       <h2 class="section-h2">How is success measured?</h2>
       <div class="grid grid-cols-2 gap-4">
         <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-1">Match → Chat Conversion</p>
-          <p class="section-body" style="font-size:0.85rem; margin-bottom:0.75rem;">How many matches lead to a started chat?</p>
+          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Engagement</p>
+          <p class="section-body" style="font-size:0.85rem; margin-bottom:0.75rem;">Does a match lead to a meetup?</p>
           <div style="display:flex; flex-direction:column; gap:0.35rem;">
-            <div style="display:flex; gap:0.5rem; align-items:start;"><span class="text-[#5580ED]">✦</span><p class="section-body" style="font-size:0.82rem;"><strong>Target:</strong> At least 25% of matches lead to interaction</p></div>
-            <div style="display:flex; gap:0.5rem; align-items:start;"><span class="text-[#5580ED]">✦</span><p class="section-body" style="font-size:0.82rem;"><strong>Measurement:</strong> Event tracking (match_created → chat_started)</p></div>
-            <div style="display:flex; gap:0.5rem; align-items:start;"><span class="text-[#5580ED]">✦</span><p class="section-body" style="font-size:0.82rem;"><strong>Real meetup:</strong> In-app survey: "Did you meet up?"</p></div>
+            <div style="display:flex; gap:0.5rem; align-items:start;"><span class="text-[#5580ED]">✦</span><p class="section-body" style="font-size:0.82rem;">Match and chat: app tracking</p></div>
+            <div style="display:flex; gap:0.5rem; align-items:start;"><span class="text-[#5580ED]">✦</span><p class="section-body" style="font-size:0.82rem;">In-app survey "Did you meet up?"</p></div>
           </div>
         </div>
         <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5">
-          <p class="text-sm font-semibold text-[#1C1F3B] mb-1">Onboarding Completion</p>
-          <p class="section-body" style="font-size:0.85rem; margin-bottom:0.75rem;">Do users complete the onboarding process and create a profile?</p>
+          <p class="text-sm font-semibold text-[#1C1F3B] mb-2">Retention</p>
+          <p class="section-body" style="font-size:0.85rem; margin-bottom:0.75rem;">Does a first meetup lead to another?</p>
           <div style="display:flex; flex-direction:column; gap:0.35rem;">
-            <div style="display:flex; gap:0.5rem; align-items:start;"><span class="text-[#5580ED]">✦</span><p class="section-body" style="font-size:0.82rem;"><strong>Target:</strong> At least 65% of users complete onboarding successfully</p></div>
-            <div style="display:flex; gap:0.5rem; align-items:start;"><span class="text-[#5580ED]">✦</span><p class="section-body" style="font-size:0.82rem;"><strong>Measurement:</strong> Task Success Rate = successfully completed tasks / all attempts × 100</p></div>
-            <div style="display:flex; gap:0.5rem; align-items:start;"><span class="text-[#5580ED]">✦</span><p class="section-body" style="font-size:0.82rem;"><strong>Verified via:</strong> Usability tests</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- NEXT STEPS -->
-    <div class="section" id="nextsteps">
-      <p class="section-label">Next Steps</p>
-      <h2 class="section-h2">Where this goes next.</h2>
-      <div class="bg-white border border-[#1C1F3B]/8 rounded-xl p-5" style="margin-top:1rem;">
-        <div style="display:flex; gap:0.75rem; align-items:start;">
-          <span style="color:#5580ED; flex-shrink:0;">✦</span>
-          <div>
-            <p class="section-body" style="font-weight:600; color:#1C1F3B; margin-bottom:0.25rem;">Further Usability Testing</p>
-            <p class="section-body" style="font-size:0.9rem;">Validate whether the revised profile and the transition from match to first action are now understood more intuitively.</p>
+            <div style="display:flex; gap:0.5rem; align-items:start;"><span class="text-[#5580ED]">✦</span><p class="section-body" style="font-size:0.82rem;">In-app survey "Did you go together?"</p></div>
+            <div style="display:flex; gap:0.5rem; align-items:start;"><span class="text-[#5580ED]">✦</span><p class="section-body" style="font-size:0.82rem;">Tracking when same pair matches again</p></div>
           </div>
         </div>
       </div>
