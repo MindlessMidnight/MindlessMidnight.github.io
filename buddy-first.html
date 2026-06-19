@@ -425,6 +425,10 @@
           <div>
             <p class="section-body" style="margin-bottom:0.4rem; max-width:28rem;">People make judgements about others within seconds. Research on thin slicing shows these quick impressions are often more about warmth than competence: does this person feel open, friendly, similar to me?</p>
             <p class="section-body" style="max-width:28rem; font-weight:500; color:#1C1F3B;">Photos create that immediate first impression. They are the first decision point for Sarah.</p>
+            <div style="margin-top:1rem; max-width:28rem; background:#dfe6fb; border-left:4px solid #5580ED; border-radius:0 10px 10px 0; padding:0.8rem 1.1rem;">
+              <p style="font-size:10px; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:#5580ED; margin:0 0 0.35rem;">Design decision</p>
+              <p style="font-size:0.875rem; color:#1C1F3B; font-weight:400; line-height:1.6; margin:0;"><span style="font-weight:600;">Design decision:</span> Photo-first layout. The photo is the entry point into every profile. It is the first thing Sarah sees while scrolling, before name or any other context, and what makes her want to read on.</p>
+            </div>
           </div>
         </div>
 
@@ -564,6 +568,44 @@
 
 
 
+    </div>
+
+    <!-- PROTOTYPE VIDEO -->
+    <div class="section" id="prototype">
+      <p class="text-[#5580ED] text-xs font-semibold tracking-wide uppercase mb-4">Prototype</p>
+      <h2 class="text-[#1C1F3B] text-2xl mb-4" style="font-family:'Newsreader',serif; font-weight:500;">See it in action.</h2>
+      <div style="position:relative; background:#1C1F3B; border-radius:16px; overflow:hidden; max-width:100%;">
+        <video
+          id="proto-video"
+          src="Prototype_screenrecording.mp4"
+          style="display:block; width:100%; height:auto;"
+          preload="metadata"
+          playsinline
+        ></video>
+        <div id="proto-overlay" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; cursor:pointer; background:rgba(28,31,59,0.4);">
+          <div style="width:80px; height:80px; background:white; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 32px rgba(0,0,0,0.3); transition:transform 0.15s;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><polygon points="8,5 19,12 8,19" fill="#1C1F3B"/></svg>
+          </div>
+        </div>
+      </div>
+      <script>
+        (function() {
+          const video   = document.getElementById('proto-video');
+          const overlay = document.getElementById('proto-overlay');
+          overlay.addEventListener('click', function() {
+            video.playbackRate = 1.5;
+            video.play();
+            overlay.style.display = 'none';
+          });
+          video.addEventListener('ended', function() {
+            overlay.style.display = 'flex';
+            video.currentTime = 0;
+          });
+          video.addEventListener('click', function() {
+            if (video.paused) { video.play(); } else { video.pause(); }
+          });
+        })();
+      </script>
     </div>
 
     <!-- ETHICS -->
